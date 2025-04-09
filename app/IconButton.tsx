@@ -1,10 +1,9 @@
-// IconButton.tsx
 import React from "react";
 
 interface IconButtonProps {
-    icon: React.ReactNode; // The icon to render (e.g., <FaCheck />)
-    onClick: () => void; // The click handler function
-    style?: React.CSSProperties; // Optional custom styles
+    icon: React.ReactNode; 
+    onClick: () => void; 
+    style?: React.CSSProperties; 
 }
 
 const IconButton: React.FC<IconButtonProps> = ({ icon, onClick, style }) => {

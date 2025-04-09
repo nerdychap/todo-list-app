@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { FaPlus, FaEdit, FaCheck, FaTrash } from "react-icons/fa"; // Import icons
+import { FaPlus, FaEdit, FaCheck, FaTrash } from "react-icons/fa";
 import IconButton from "./IconButton";
 import TodoTextItem from "./TodoTextItem";
 
@@ -47,7 +47,7 @@ export default function Home() {
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>Todo List</h1>
+      <h1 style={styles.title as React.CSSProperties}>Todo List</h1>
       <div style={styles.form}>
         <input
           type="text"
@@ -80,7 +80,7 @@ export default function Home() {
                 icon={<FaCheck />}
                 onClick={() => handleToggleComplete(index)}
                 style={{
-                  color: todo.completed ? "#28a745" : "#888", // Green for completed, gray for uncompleted
+                  color: todo.completed ? "#28a745" : "#888",
                 }}
               />
               <IconButton
@@ -137,10 +137,10 @@ const styles = {
     border: "none",
     cursor: "pointer",
     fontSize: "16px",
-    transition: "color 0.3s ease", // Smooth color transition
+    transition: "color 0.3s ease",
   },
   iconButtonHover: {
-    color: "#0056b3", // Darker shade for hover
+    color: "#0056b3",
   },
   list: {
     listStyle: "none",
@@ -162,10 +162,10 @@ const styles = {
     color: "#333",
   },
   addButton: {
-    color: "#0070f3", // Blue for add
+    color: "#0070f3",
   },
   completedTodo: {
     textDecoration: "line-through",
-    color: "#888", // Gray for completed
+    color: "#888",
   },
 };
