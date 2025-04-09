@@ -11,7 +11,11 @@ A simple and elegant todo list application built with Next.js and React.
 
 ## Getting Started
 
-1. Clone the repository
+1. Clone the repository:
+```bash
+git clone https://github.com/nerdychap/todo-list-app.git
+cd todo-list-app
+```
 2. Install dependencies:
 ```bash
 npm install
